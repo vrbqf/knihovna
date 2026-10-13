@@ -18,10 +18,11 @@
             <div>{{ $error }}</div>
         @endforeach
     </div>
-    @endregion
-    <!-- KONEC VÝPISU ZPRÁV -->
+@endif
+<!-- KONEC VÝPISU ZPRÁV -->
 
-    <p><a href="{{ route('books.index') }}" class="btn btn-secondary">&larr; Zpět na seznam</a></p><p><a href="{{ route('books.index') }}" class="btn btn-secondary">&larr; Zpět na seznam</a></p> <!-- Odstavec s tlačítkem pro návrat na hlavní stránku se seznamem knih -->
+<p><a href="{{ route('books.index') }}" class="btn btn-secondary">&larr; Zpět na seznam</a></p>
+
 <h1>{{ $book->title }}</h1> <!-- Hlavní nadpis 1. úrovně zobrazující název aktuální knihy -->
 <p><strong>Autor:</strong> {{ $book->author }} | <strong>ISBN:</strong> {{ $book->isbn }} | <strong>Dostupné výtisky:</strong> {{ $book->available_copies }}</p> <!-- Informační odstavec s detailem autora, ISBN a počtu dostupných výtisků -->
 
